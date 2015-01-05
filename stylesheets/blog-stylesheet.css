@@ -1,3 +1,5 @@
+/*This is the styling for the blog template itself. Not the blog landing page*/
+
 body{
   width:950px;
   margin-left: auto;
@@ -80,4 +82,5 @@ padding-top:-10px;
   float: left;
   left: 30px;
   position: relative;
+  overflow: scroll;
 }
