@@ -1,0 +1,64 @@
+<!--This is the html for the actual template for each of my individial blog posts-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eveanandi Butler's Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+  <section>
+    <<div id="header">
+    </div>
+
+    <div id="navbar">
+      <ul>
+        <li> <a href="#">About Me</a></li>
+        <li> <a href="#">Projects</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li> <a href="#">Contacts </a> </li>
+      </ul>
+    </div>
+
+
+
+    <div id="search">
+    </div>
+
+    <div id="blog-text">
+
+      <h1>U1.W.2 CSS Concepts</h1>
+      <h2>Covering: Static, Relative, Absolute, and Fixed Positioning</h2>
+      <h4>Monday, January 4, 2015</h4>
+        <p>Hello Again! The topic we'll be covering today is: The difference between relative, absolute, and fixed positioning.</p>
+        <p> Trying to understand the positioning of elemtents was one of the harder concepts for me to grasp, so I did some extra research to try to teach you the basics. As they say, teaching is the best way to learn!</p>
+        <p> So the most important thing to understand when creating a webpage is that every element if just a block of pixels. What you're aiming to do with the positioning is move that block of pixels exactly where you want it on a page. There are a few differenet ways to do that.
+          <dl>
+            <dt>Static Positioning</dt>
+              <dd>Setting an element to position:static essentially means you want the element to stay exactly where it would normally fall on the page. It remains in its default state. This is a position that is rarely used, but it is definitely important to know that it exists.</dd>
+            <dt>Relative Positioning</dt>
+              <dd>When an element is set to position:relative, you are setting the element to be moved around relative to it's normal (or static) position. If you just leave it as position:relative, and dont specify values to the top, bottom, left, or right properties, it won't move at all. You use those properties to move the element around relative to where it would be. Positioning an element as relative is used often as a block for absolutely positioned elements because it limits the position of child elements that are set to absolute.</dd>
+             <dt>Absolute Positioning</dt>
+              <dd>When you set an element to position:absolute, you have the ability to place it exactly where you need it. Absolute elements will be relative to any parent element that is not static. If there is no such element, it will default to being relative to <html>, which essentially means it's relative to the webpage itself. (This is why I mentioning absolute positioning when talking about relative positioning. Relative positioned elements will block in absolutely positionined elements.)</dd>
+             <dt>Fixed Positioning</dt>
+              <dd>The last form of positioning available is position:fixed. This positioning will position an element relative to the actual browser window. This means that the item wont move when the user scrolls through the content.<dd>
+        </p>
+
+
+    </div>
+
+    <div id="sidebar">
+      <ul>
+        <li> <a href="#">Blog Post 1</a></li>
+        <li> <a href="#">Blog Post 2</a></li>
+        <li> <a href="#">Blog Post 3</a></li>
+        <li> <a href="#">Blog Post 4</a></li>
+      </ul>
+    </div>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
+
