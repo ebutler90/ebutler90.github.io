@@ -1,21 +1,51 @@
 /*This is the css styling for my main personal site (it will include overlap for the blog-landing page as well) */
 body {
-  background-color: #CB99a5;
-  font-family: Tahoma, sans-serif;
+  background-color: #edb0bf;
+  font-family: 'Poiret One', cursive;
+  color: white;
 }
 
-.header{
-background-color: #c2b1bf;
-border: 1px solid white;
-height:100px;
+a.link{
+  color:white;
+  text-decoration: none;
+}
+
+a.visited{
+  text-decoration: none;
+}
+
+a:hover{
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:active{
+  text-decoration: none;
+}
+
+/*Formatting for Header*/
+header{
+background-color: #47353a;
+height:75px;
 width: 100%;
-margin-bottom:20px;
+margin:0px;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+h1{
+  font-size: 60px;
+  margin-top:0px;
+  margin-right:0px;
+  margin-left:0px;
+  padding-top: 5px;
 }
 
 /*Formatting for Navigation Bar*/
 .navbar{
   height:40px;
   width:100%;
+  background-color: #6e515b;
+  border-top: 2px solid #edb0bf;
 }
 
 .navbar ul{
@@ -34,5 +64,66 @@ margin:0px;
   width: 180px;
   text-align: center;
   font-size: 20px;
-
+  margin-left:30px;
 }
+
+
+
+/*Formatting Main Image*/
+ #main-image img{
+  max-width: 400px;
+  max-height:auto;
+}
+
+#main-image{
+  margin-top: 30px;
+  margin-left: 327px;
+  margin-right: 327px;
+}
+
+/*Formatting Text Box*/
+#about-me-text{
+  width:500px;
+  height:200px;
+  display: block;
+  overflow:auto;
+  margin-right: 295px;
+  margin-left:295px;
+  margin-bottom: 40px;
+}
+
+#about-me-text p{
+  margin: 0px;
+}
+
+/*Formatting Blog Divs*/
+.post{
+  background-color: #ad808b;
+  height: 150px;
+  width: 250px;
+  border: 1px solid white;
+  display: inline-block;
+  float: left;
+  margin: 75px 120px;
+}
+
+.post a{
+  text-align: center;
+  padding-top: 50px;
+}
+
+
+
+
+/*Formatting footer*/
+
+footer{
+  background-color: #47353a;
+  height: 40px;
+  width:100%;
+  position:fixed;
+  bottom: 0;
+}
+
+
+
