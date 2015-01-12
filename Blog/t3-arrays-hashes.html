@@ -1,0 +1,75 @@
+<!--This is the html for the actual template for each of my individial blog posts-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eveanandi Butler's Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+  <section>
+    <<div id="header">
+    </div>
+
+    <div id="navbar">
+      <ul>
+        <li> <a href="#">About Me</a></li>
+        <li> <a href="#">Projects</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li> <a href="#">Contacts </a> </li>
+      </ul>
+    </div>
+
+
+
+    <div id="search">
+    </div>
+
+    <div id="blog-text">
+
+      <h1>U1.W3: Technical Blog Entry</h1>
+      <h2>Covering: Arrays vs. Hashes</h2>
+      <h4>Sunday, January 11, 2015</h4>
+      <p>Hello again! It's time to talk about Arrays and Hashes. At first glance, you'd think they were basically the same thing. When I was first reading about them, I was having some trouble differentiating them, and really understanding when an array was appropriate and when a hash was appropriate. But, there are some key differences, which I will break down in the following paragraphs.</p>
+      <p>Before we start in on differences, lets explain how they are the same. Both Arrays and Hashes are what we call "indexed collections." They both store objects, that are essentially arranged in lists, and all of the objects can be called upon via a key. Both Hashes and Arrays can be added to or deleted from. Most importantly howeverm both hashes and arrays can hold any types of data, whether they be integers, floats, strings, etc.</p>
+      <p> The main difference between arrays and hashes is how you can access the individual objects. With an array, the key will always be an integer. (The key will start at 0 which relates to the first object in the array, and increase from there to match the remainder of the objects in the array.) Hashes on the other hand can use any object as a key to the objects that they hold. This makes arrays more efficient, since there is a uniform call system. But hashes are a more flexible option, because they allow you to map one value to another. For example:<br>
+        <br>
+      array = [ "cat", "dog", "bird"] <br>
+        <br>
+      To call the objects, you would have to use the following: <br>
+        <br>
+      puts array[0] (This would call "cat") <br>
+      puts array[1] (This would call "dog") <br>
+      puts array[2] (This would call "bird") <br>
+        <br>
+      But with a hash, things are a little different. You can assign any value (it doesnt have to be 0..100+): <br>
+
+      hash = {"whiskers" => "cat", "rufus" => "dog",  "tweety" => "bird"} <br>
+        <br>
+      To call the objects, you can use the word values:<br>
+      <br>
+      puts hash["whiskers"] (This would call "cat") <br>
+      puts hash["rufus"] (This would call "dog")<br>
+      puts hash["tweety"] (This would call "bird")<br>
+    </p>
+
+
+
+    </div>
+
+
+    <div id="sidebar">
+      <ul>
+        <li> <a href="#">Blog Post 1</a></li>
+        <li> <a href="#">Blog Post 2</a></li>
+        <li> <a href="#">Blog Post 3</a></li>
+        <li> <a href="#">Blog Post 4</a></li>
+      </ul>
+    </div>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
+
