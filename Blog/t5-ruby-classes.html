@@ -1,0 +1,84 @@
+<!--This is the html for the actual template for each of my individial blog posts-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eveanandi Butler's Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<main>
+  <section>
+    <<div id="header">
+    </div>
+
+    <div id="navbar">
+      <ul>
+        <li> <a href="#">About Me</a></li>
+        <li> <a href="#">Projects</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li> <a href="#">Contacts </a> </li>
+      </ul>
+    </div>
+
+
+
+    <div id="search">
+    </div>
+
+    <div id="blog-text">
+
+      <h1>U2.W5. Technical Blog Entry</h1>
+      <h2>Covering: Classes (When, Why, How?)</h2>
+      <h4>Sunday, January 25, 2015</h4>
+      <p>Classes are an intersting concept, and they are actually incredibly helpful. It's kind of hard to understand why classes are necessary when you're first starting to learn code, because most of the programs we are writing are pretty simple, and dont have to do to much; but classes will really come into play when there are expanses of code that do a ton of different things, and use a multitude of data. The simplest way to think of classes is to think of them as containers.</p>
+      <p>I say that you should think of classes as containers, because all methods that you write within a class are contingent on the class that they are a part of. The class can be any problem that you're trying to solve. You then create methods within the class to "solve" your problem. Then you can create "instances" of your classes and run the methods on each of the instances that you create. It's a little bit easier to understand when you actually see it in practice, so here is an example of a class, it's methods, and creating an instance of the class: </p>
+      <pre class="prettyprint lang-ruby">
+              class GuessingGame
+                def initialize(answer)
+                  @answer = answer
+                end
+
+                def guess(guess)
+                  @guess = guess
+                  if @guess > @answer
+                    p :high
+                  elsif @guess < @answer
+                    p :low
+                  else @guess = @answer
+                    p :correct
+                  end
+                end
+
+                def solved?
+                  if @guess == @answer
+                    p true
+                  else
+                    p false
+                  end
+                end
+              end
+
+              #drivertests
+              game = GuessingGame.new(89)
+              game.solved?
+              game.guess(7)
+              game.guess(100)
+              game.solved?
+              game.guess(89)
+              game.solved?
+      </pre>
+      <p> The example of above shows a class GuessingGame which is the "problem" that's trying to be solved. The methods guess and solved? are created to solve the problem of the guessing game. The driver test shows how those methods interact with the class. So you create an instance of the class using a new variable (game in this case). Then you can run the define methods on this instance of class to solve Guessing game.
+      </p>
+
+
+    </div>
+
+
+
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
+
