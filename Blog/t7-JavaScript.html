@@ -29,10 +29,33 @@
 
     <div id="blog-text">
 
-      <h1><!--Insert Blog Title Here--></h1>
-      <h2><!--Insert Subtitle Here--></h2>
-      <h4><!--Insert Date Here--></h4>
-      <p><!--Insert Blog Content Here--></p>
+      <h1>U3.W7: Technical Blog</h1>
+      <h2>Covering Loops in Ruby vs Loops in Javascript</h2>
+      <h4>February 8th, 2015</h4>
+      <p>
+        Looping is an extremely helpful tool when you are attempting to run the same chunk of code on multiple values. The easiest way to do that is to create an array (I'm going to operate that you understand an array to be a set of information within [] brackets, that corrolate to an index.). When you have that information in an array, whether you are working in Ruby or in Javascript, you have the ability to loop through that information in a multitude of different ways. You just have to go about it a little differently depending on the language that you are in.
+      </p>
+      <p>
+        There are some looping methods that are shared. The "while" and "until" looping method is one of those. For both Ruby and Javascript, you can use a while or an until loop where you write a block of code that should be implemented on each aspect of the array "while" a certain condition is true, or a "until" a certain condition is true.
+      </p>
+      <p>
+        There is another way of looping that Ruby and Javascript share that requires completely different syntax. That is the "for" loop. In Ruby, you declare a variable, in a certain array or range , and then return (or print) the result of the block of code you want to use on each value. It looks like this:
+          <pre class="prettyprint lang-ruby">
+            for value in [1,2,3,4,5,6,7,8,9,10]
+                print "#{value} "
+            end
+          </pre>
+        The syntax in Javascript is a bit different. You must declare everything up front, and essentially create the loop yourself.
+          <pre class="prettyprint lang-ruby">
+            for (var i = 0; i < 9; i++) {
+              console.log(i);
+            }
+          </pre>
+        This is generally the case for Javascript looping methods; you need to declare variables and explain to the loop exactly how it should be incrementally looping through any values, while the Ruby loops just need to be told their constraints.
+    </p>
+    <p>
+      I'm obviously no expert at these languages yet, but the one major difference that I've come across between Ruby and Javascript is Ruby's "each" iterator. When using .each, Ruby loops automatically through an entire array (or hash). It's perfect, because the only thing you need to specify is the code you want to use on every element of the array or hash. As far as my research tells me, there is no such equivalent in Javascript; you have to tell your loops exactly how many times you want them to iterate over the array.
+    </p>
 
     </div>
 
